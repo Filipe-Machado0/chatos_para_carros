@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Chatos Para Carros — Lava Rápido</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -50,6 +51,8 @@
   .step-card{background:var(--bg-alt); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:28px 22px; text-align:center; transition:transform .15s ease;}
   .step-num{width:34px; height:34px; border-radius:50%; background:var(--orange); color:var(--ink); font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 14px;}
   .step-card svg{width:34px; height:34px; color:var(--orange); margin-bottom:10px;}
+  .step-card i{font-size:30px; color:var(--orange); margin-bottom:10px; display:block;}
+  .icon-badge i{font-size:20px; color:var(--orange);}
   .step-card h3{margin:0 0 6px; font-size:17px;}
   .step-card p{margin:0; color:var(--muted); font-size:14px;}
 
@@ -222,7 +225,7 @@
   <div class="about">
     <div class="about-visual reveal">
       <div class="map-card">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" style="width:38px;height:38px;color:var(--orange);"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <i class="fas fa-location-dot" style="font-size:38px;color:var(--orange);"></i>
         <strong>Alameda das Azaléias, 594</strong>
         <span>Jardim Simus · Sorocaba - SP</span>
         <a class="pill pill-cta" data-maps="-23.5070665,-47.4945514" href="#" target="_blank" rel="noopener">Ver no Google Maps →</a>
@@ -251,31 +254,31 @@
     </div>
     <div class="services-grid">
       <div class="service-card reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3c-3 4-6 7.5-6 11a6 6 0 0 0 12 0c0-3.5-3-7-6-11z"/></svg></div>
+        <div class="icon-badge"><i class="fas fa-soap"></i></div>
         <h3>Lavagem Rápida</h3>
         <p>Tira o pó do dia a dia, sem sujar a agenda.</p>
         <a class="service-link" data-msg="Olá! Vim pelo site e quero agendar uma Lavagem Rápida 🚗" href="#">Agendar essa →</a>
       </div>
       <div class="service-card reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 13l1.5-5a2 2 0 0 1 2-1.4h11a2 2 0 0 1 2 1.4L21 13"/><rect x="2.5" y="13" width="19" height="6" rx="1.5"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg></div>
+        <div class="icon-badge"><i class="fas fa-car-side"></i></div>
         <h3>Lavagem Completa</h3>
         <p>Externa e interna caprichada, de ponta a ponta.</p>
         <a class="service-link" data-msg="Olá! Vim pelo site e quero agendar uma Lavagem Completa 🚗" href="#">Agendar essa →</a>
       </div>
       <div class="service-card reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <div class="icon-badge"><i class="fas fa-gem"></i></div>
         <h3>Polimento</h3>
         <p>Remove riscos e devolve o brilho da pintura.</p>
         <a class="service-link" data-msg="Olá! Vim pelo site e quero agendar um Polimento ✨" href="#">Agendar essa →</a>
       </div>
       <div class="service-card reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3.5v5c0 5-3 8.5-7 9.5-4-1-7-4.5-7-9.5v-5L12 3z"/></svg></div>
+        <div class="icon-badge"><i class="fas fa-shield-halved"></i></div>
         <h3>Vitrificação</h3>
         <p>Proteção de longa duração contra sol e chuva.</p>
         <a class="service-link" data-msg="Olá! Vim pelo site e quero agendar uma Vitrificação 🛡️" href="#">Agendar essa →</a>
       </div>
       <div class="service-card reveal">
-        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="5.5" cy="17" r="2.5"/><circle cx="18.5" cy="17" r="2.5"/><path d="M8 17h6l2-6h3M8 17l3-7h4l1.5 3"/></svg></div>
+        <div class="icon-badge"><i class="fas fa-motorcycle"></i></div>
         <h3>Lavagem de Moto</h3>
         <p>Cuidado específico pra moto, cantinho por cantinho.</p>
         <a class="service-link" data-msg="Olá! Vim pelo site e quero agendar uma Lavagem de Moto 🏍️" href="#">Agendar essa →</a>
@@ -338,17 +341,17 @@
   </div>
   <div class="steps">
     <div class="step-card reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2z"/></svg>
+      <i class="fab fa-whatsapp"></i>
       <h3>1. Agenda pelo WhatsApp</h3>
       <p>Escolhe o serviço e manda a mensagem — sem app pra baixar.</p>
     </div>
     <div class="step-card reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l1.5-5a2 2 0 0 1 2-1.4h11a2 2 0 0 1 2 1.4L21 13"/><rect x="2.5" y="13" width="19" height="6" rx="1.5"/><circle cx="7" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></svg>
+      <i class="fas fa-van-shuttle"></i>
       <h3>2. A gente busca (sistema leva e traz)</h3>
       <p>Combinamos o horário e cuidamos da logística.</p>
     </div>
     <div class="step-card reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c-3 4-6 7.5-6 11a6 6 0 0 0 12 0c0-3.5-3-7-6-11z"/></svg>
+      <i class="fas fa-circle-check"></i>
       <h3>3. Devolvemos limpo</h3>
       <p>Carro ou moto prontos, do jeito que você combinou.</p>
     </div>
